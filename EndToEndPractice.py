@@ -10,7 +10,7 @@ from selenium.webdriver.support.select import Select
 from Action_class import service_obj
 
 cdservice_obj=Service()
-driver= webdriver.Chrome(service=service_obj)
+driver= webdriver.hrome(service=service_obj)
 driver.implicitly_wait(6)
 driver.get("https://rahulshettyacademy.com/angularpractice/")
 driver.find_element(By.XPATH,"//a[.='Shop']").click()
