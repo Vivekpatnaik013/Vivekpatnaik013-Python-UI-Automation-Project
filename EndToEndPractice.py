@@ -12,7 +12,7 @@ from Action_class import service_obj
 cdservice_obj=Service()
 driver= webdriver.Chrome(service=service_obj)
 driver.implicitly_wait(6)
-driverget()
+driver
 driver.find_element(By.XPATH,"//a[.='Shop']").click()
 ProductList=driver.find_elements(By.XPATH,"//div[@class='card h-100']")
 for product in ProductList:
